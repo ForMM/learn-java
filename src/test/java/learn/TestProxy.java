@@ -27,12 +27,7 @@ public class TestProxy {
 		v.drive();
 		Rechargable r = (Rechargable)o;
 		r.recharge();
-		
-		
-		
-		
-		
-		
+
 	}
 
 }
