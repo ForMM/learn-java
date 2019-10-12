@@ -20,14 +20,11 @@ public class TestProxy {
 		ClassLoader classLoader = car.getClass().getClassLoader();
 		Class<?>[] interfaces = car.getClass().getInterfaces();
 		InvocationImpl invocationHandler = new InvocationImpl(car);
-		
 		Object o = Proxy.newProxyInstance(classLoader, interfaces, invocationHandler);
-		
 		Vehicle v = (Vehicle)o;
 		v.drive();
 		Rechargable r = (Rechargable)o;
 		r.recharge();
-
 	}
 
 }
