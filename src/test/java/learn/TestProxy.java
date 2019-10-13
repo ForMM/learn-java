@@ -1,8 +1,5 @@
 package learn;
 
-import static org.junit.Assert.*;
-
-import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
 import org.junit.Test;
