@@ -18,10 +18,21 @@ public class TestProxy {
 		Class<?>[] interfaces = car.getClass().getInterfaces();
 		InvocationImpl invocationHandler = new InvocationImpl(car);
 		Object o = Proxy.newProxyInstance(classLoader, interfaces, invocationHandler);
-		Vehicle v = (Vehicle)o;
+		Vehicle v = (Vehicle) o;
 		v.drive();
-		Rechargable r = (Rechargable)o;
+		Rechargable r = (Rechargable) o;
 		r.recharge();
+	}
+
+	@Test
+	public void testCount(){
+		int tail = 0;
+		int count = 0;
+		tail = (tail + 1) % 1;
+		count++;
+
+		System.out.println(tail);
+
 	}
 
 }

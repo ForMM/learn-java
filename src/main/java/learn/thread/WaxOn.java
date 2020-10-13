@@ -4,14 +4,14 @@ import java.util.concurrent.TimeUnit;
 
 public class WaxOn implements Runnable {
 	private Car car;
-	
+
 	public WaxOn(Car car) {
 		super();
 		this.car = car;
 	}
 
 	public void run() {
-		while(!Thread.interrupted()) {
+		while (!Thread.interrupted()) {
 			System.out.println("Wax on!");
 			try {
 				TimeUnit.MILLISECONDS.sleep(200);
