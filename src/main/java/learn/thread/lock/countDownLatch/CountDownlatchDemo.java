@@ -4,6 +4,9 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * 老板等三个工人完成任务后才去检查工作
+ */
 public class CountDownlatchDemo {
     public static void main(String[] args) {
         ExecutorService executor = Executors.newCachedThreadPool();
