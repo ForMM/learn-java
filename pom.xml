@@ -24,7 +24,6 @@
             <artifactId>itextpdf</artifactId>
             <version>5.5.13</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.itextpdf/itext-asian -->
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>itext-asian</artifactId>
