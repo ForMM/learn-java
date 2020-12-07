@@ -7,9 +7,9 @@ import java.util.concurrent.TimeUnit;
 public class ScheduleThreadDemo {
 	public static void main(String[] args) {
 		ScheduledExecutorService newScheduledThreadPool = Executors.newScheduledThreadPool(10);
-//		newScheduledThreadPool.scheduleWithFixedDelay(command, initialDelay, delay, unit)
+		//		newScheduledThreadPool.scheduleWithFixedDelay(command, initialDelay, delay, unit)
 		newScheduledThreadPool.scheduleWithFixedDelay(new Runnable() {
-			
+
 			public void run() {
 				try {
 					Thread.sleep(1000);
@@ -17,9 +17,9 @@ public class ScheduleThreadDemo {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				
-				System.out.println(System.currentTimeMillis()/1000);
-				
+
+				System.out.println(System.currentTimeMillis() / 1000);
+
 			}
 		}, 0, 2, TimeUnit.SECONDS);
 	}

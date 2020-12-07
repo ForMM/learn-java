@@ -25,7 +25,7 @@ public class TestProxy {
 	}
 
 	@Test
-	public void testCount(){
+	public void testCount() {
 		int tail = 0;
 		int count = 0;
 		tail = (tail + 1) % 1;
