@@ -11,6 +11,13 @@ import java.util.Set;
 
 public class PdfFillUitl {
 
+	/**
+	 * 获取pdf文档里的文本域
+	 * @param filePath
+	 * @param iscontainsignfield
+	 * @return
+	 * @throws Exception
+	 */
 	public static String[] getPdfKeys(String filePath, boolean iscontainsignfield) throws Exception {
 		String[] keys = null;
 		PdfReader reader = null;
